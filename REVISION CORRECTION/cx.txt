@@ -1,0 +1,26 @@
+Function LoanEligibilityA(workExperience As Double, salary As Double) As String
+    ' Case A: And condition
+    If (workExperience >= 5 And salary >= 300000) Then
+        LoanEligibilityA = "Good news, you are eligible for a loan"
+    Else
+        LoanEligibilityA = "We are very sorry, you are not eligible for a loan"
+    End If
+End Function
+
+Function LoanEligibilityB(workExperience As Double, salary As Double) As String
+    ' Case B: Or condition
+    If (workExperience >= 5 Or salary >= 300000) Then
+        LoanEligibilityB = "Good news, you are eligible for a loan"
+    Else
+        LoanEligibilityB = "We are very sorry, you are not eligible for a loan"
+    End If
+End Function
+
+Function LoanEligibilityC(workExperience As Double, salary As Double) As String
+    ' Case C: Xor condition
+    If (workExperience >= 5 Xor salary >= 300000) Then
+        LoanEligibilityC = "Good news, you are eligible for a loan"
+    Else
+        LoanEligibilityC = "We are very sorry, you are not eligible for a loan"
+    End If
+End Function
